@@ -1,5 +1,5 @@
 # e2e-testing 
-[Como ejecutar](#Ejecutar-las-pruebas)
+[Estrategia](Estrategia)
 # Escenario de pruebas(ghost 3.42)
 | Identificador | Nombre escenario      | Tipo     |
 |---------------|-----------------------|----------|
@@ -57,40 +57,17 @@
 | EMB2          | Crear miembro con email invalido                        | Positivo          |
 | EMB3          | Crear miembro con descripcion con mas de 500 caracteres | Positivo          |
 | EMB4          | Borrar miembro                                          | Positivo          |
+# Estrategia para realizar VRT
+Para realizar el VRT comparamos los screenshot generado con cypress en la version 3.42 con las de kraken que tomaba screenshot en la version 4.47, tratando siempre de tomar screenshot en los mismos pasos
+# Cypress
+Para tomar captura en cypress utilizamos el comando cy.screenshot()
+# Kraken
+Se decidió utilizar esta el comando saveScreenshot() de webdriver debido a que era muy difícil encontrar los screenshot que generaba kraken automáticamente, De igual manera se unieron los escenarios que se irían a comparar debido a que si se ejecutaban en feature separadas, las screenshot podrían variar mas debido a que estos se ejecutan paralelamente y algunos escenarios podrian cambiar la informacion que se mostraba al momento de realizar la screenshot para realizar la comparación.
 
-## Ejecutar las pruebas
+Antes de la ejecucion de cada prueba utilizando el hook before de cucumber definíamos la ruta a la cual queríamos que fuera la imagen, creando una carpeta llamada results con dos subcarpetas 4.47 y 3.42 que contenían el nombre del escenario a ejecutar de tal manera que el directorio que genera es "results/version/nombre-escenario/step#.png", el nombre de la screenshot tomaba el valor de una variable llamada step la cual iría incrementando a medida que se ejecutaba el paso de _"I take a screenshot"_. 
 
-Antes de ejecutar las pruebas se recomienda tener un usuario con email: prueba@example.com y password:prueba@example.com123456789 en ambas versiones, de no ser asi se debe modifcar las variables USER y PASSWORD en el archivo properties.json y para cypress se debe modifcar en la funcion login de todos los archivos de que se encuentran en integrations los valores cambiando de #amber7 y #amber9 en la funcion .type() por el usuario y contraseña respectivamente.
+# VRT
+El reporte generado se ve de la siguiente manera donde cada tab tiene el nombre de los escenarios comparados.
+![image](https://user-images.githubusercontent.com/98716277/168504119-0c486b21-7982-407a-8908-717a4fbe53e7.png)
 
-La version 3.42 se debe ejecutar en el puerto 3001 y la version 4.47 en el puerto 2368
-
-### Cypress 
-Para hacer las pruebas de regresion se recomienda ejecutar las pruebas de ghost 3.42 primero
-1. Ejecute el comando `npm install` en la raiz del repositorio
-2. Para ejecutar las pruebas:
-   * Ejecutar solo las pruebas de ghost 3.42 `cypress run --spec "cypress/integration/pruebas-de-regresion/3.42/*.spec.js"`
-   * Ejecutar solos las pruebas de ghost 4.47 `cypress run --spec "cypress/integration/pruebas-de-regresion/4.47/*.spec.js"`
-   * Ejecutar todas las pruebas `cypress run`
-
-### Kraken
-*Para realizar las pruebas de regresion se recomiendo ejecutar primero las pruebas de ghost 4.47 que estaran en el archivo para esto puede ejecutar el comando `npm run enablev4` y luego `npm run start` desde la carpeta kraken* `ghost4_47.feature` 
- <br>
-
-1. Ingrese a la carpeta kraken desde la terminal 
-2. Ejecute el comando `npm install`
-3. Si desea:
-  * Ejecutar solo los 5 feature para realizar el VRT `npm run enablev4` 
-  * Ejecutar solo los 5 feature de la version 3.42 `npm run enablev3`
-  * Ejecutar todos `npm run enableAll`  
-4. Ejecute el comando `npm run start` para empezar con la ejecucion
-<br>
-*Nota: en caso de que aparezca este error al ejecutar handleErrorFromBinding(ctx) se deben ejecutar las pruebas individualmente.*
-
-## VRT
-Antes debe ejecutar las pruebas
-1. Ir a la carpeta resemblejs
-2. Ejecutar `npm install`
-3. Ejecutar el comando `node index.js`
-4. Dirigirse a la carpeta results generada
-5. Abrir el archivo index.html
 
