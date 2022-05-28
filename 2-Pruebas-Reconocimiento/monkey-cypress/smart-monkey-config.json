@@ -1,0 +1,23 @@
+{
+    "projectId":"TSDL-Smart-Monkey-with-cypress",
+    "baseUrl":"http://localhost:2368/ghost",
+    "env":{
+        "appName":"App prueba",
+        "events":100,
+        "delay":300,
+        "seed":3451,
+        "pctClicks":10,
+        "pctScroll":10,
+        "pctSelectors":10,
+        "pctKeys":10,
+        "pctSpKeys":10,
+        "pctPgNav":5,
+        "pctBwChaos":5,
+        "pctActions":40
+    },
+    "integrationFolder": "./cypress/integration/monkey",
+    "pluginsFile": "./cypress/plugins/index.js",
+    "pageLoadTimeout":120000,
+    "testFiles": "smart-monkey.js",
+    "videosFolder":"./results"
+}
