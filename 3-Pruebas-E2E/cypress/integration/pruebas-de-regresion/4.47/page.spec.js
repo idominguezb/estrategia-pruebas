@@ -5,7 +5,9 @@ describe("Page Flow", function () {
     cy.viewport(1920, 1080)
     cy.wait(1000);
     crear_pagina("New page","/scenario_createPage");
-    
+    crear_pagina_programada("Page scheduled","/sceneario_createScheduledPage");
+    crear_pagina_con_draft("draft page","/scenario_createPageDraft");
+    crear_pagina_con_nombre_extenso("Crear pagina con nombre extenso","/scenario_longName");
   });
 });
 

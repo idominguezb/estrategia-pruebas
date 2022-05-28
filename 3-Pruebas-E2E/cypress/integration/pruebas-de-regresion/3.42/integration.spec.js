@@ -22,10 +22,10 @@ function goToIntegrationsPage() {
 
 function createIntegration(name) {
     goToIntegrationsPage();
-
+    cy.wait(1000)
     // Add integration
     cy.visit('/ghost/#/settings/integrations/new');
-
+    cy.wait(1000)
     // Set integration name
     cy.get('#new-integration-name').type(name);
     cy.screenshot(ruta+'step2', {overwrite: true, capture: 'fullPage'});

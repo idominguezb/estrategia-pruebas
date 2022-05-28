@@ -1,11 +1,12 @@
 describe('Tag Flow', () => {
   it('Tags', () => {
     cy.visit('http://localhost:2368/ghost/')
+    cy.viewport(1920,1080)
     login();
     createNewTag()
     createNewTagInvalidColor()
     createNewTagInvalidDescription()
-    createInternalTag()
+   
   })
 })
 
@@ -82,8 +83,9 @@ function createInternalTag() {
   tagName.type(internalName);
   cy.screenshot()
   const saveButton = cy.get('html:nth-of-type(1) > body:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > main:nth-of-type(1) > section:nth-of-type(1) > form:nth-of-type(1) > div:nth-of-type(1) > header:nth-of-type(1) > section:nth-of-type(1) > button:nth-of-type(1) > span:nth-of-type(1)');
+  cy.wait(2000)
   saveButton.click()
-  cy.screenshot()
+  cy.screenshot(2000)
   cy.visit('http://localhost:2368/ghost/#/tags?type=internal');
   cy.wait(2000)
   cy.screenshot()  
