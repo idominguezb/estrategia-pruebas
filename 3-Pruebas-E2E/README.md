@@ -57,6 +57,17 @@
 | EMB2          | Crear miembro con email invalido                        | Positivo          |
 | EMB3          | Crear miembro con descripcion con mas de 500 caracteres | Positivo          |
 | EMB4          | Borrar miembro                                          | Positivo          |
+# Estrategia
+Para realizar el VRT comparamos los screenshot generado con cypress en la version 3.42 con las de kraken que tomaba screenshot en la version 4.47, tratando siempre de tomar screenshot en los mismos pasos
+# Cypress
+Para tomar captura en cypress utilizamos el comando cy.screenshot()
+# Kraken
+Se decidió utilizar esta el comando saveScreenshot() de webdriver debido a que era muy difícil encontrar los screenshot que generaba kraken automáticamente, De igual manera se unieron los escenarios que se irían a comparar debido a que si se ejecutaban en feature separadas, las screenshot podrían variar mas debido a que estos se ejecutan paralelamente y algunos escenarios podrian cambiar la informacion que se mostraba al momento de realizar la screenshot para realizar la comparación.
 
+Antes de la ejecucion de cada prueba utilizando el hook before de cucumber definíamos la ruta a la cual queríamos que fuera la imagen, creando una carpeta llamada results con dos subcarpetas 4.47 y 3.42 que contenían el nombre del escenario a ejecutar de tal manera que el directorio que genera es "results/version/nombre-escenario/step#.png", el nombre de la screenshot tomaba el valor de una variable llamada step la cual iría incrementando a medida que se ejecutaba el paso de _"I take a screenshot"_. 
+
+# VRT
+El reporte generado se ve de la siguiente manera donde cada tab tiene el nombre de los escenarios comparados.
+![image](https://user-images.githubusercontent.com/98716277/168504119-0c486b21-7982-407a-8908-717a4fbe53e7.png)
 
 
