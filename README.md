@@ -25,13 +25,13 @@ Antes de le ejecucion ejecutar el comando `npm install -g http-server`
 
 ### Pruebas e2e
 
-## Cypress 
+### Cypress 
 
 1. Ejecute el comando `npm install` en la carpeta 3-Pruebas-E2E
 2. Para ejecutar las pruebas:
    * Ejecutar solos las pruebas de ghost 4.47 `cypress run --spec "cypress/integration/pruebas-de-regresion/4.47/*.spec.js"`
 
-## Kraken
+### Kraken
 
  <br>
 1. Ingrese a la carpeta kraken desde la terminal 
