@@ -14,6 +14,7 @@ Para ejecutar las prueba de monkey-cypress:
 5. Para ver el resulado ingresar en la carpeta results y abrir el archivo monkey-execution.html
 
 ## Ripuppet
+Se necesita usar node en la version 12.22 y ghost en la version 3.43 para que pueda generar el grafo de navegacion correctamente
 Antes de le ejecucion ejecutar el comando `npm install -g http-server`
 1. Ingresar a la carpeta 2-Pruebas-Reconocimiento
 2. Ingresar en la carpeta ripuppet
