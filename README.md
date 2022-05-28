@@ -10,7 +10,7 @@ Para ejecutar las prueba de monkey-cypress:
 1. Ingresar a la carpeta 2-Pruebas-Reconocimiento
 2. Ingresar en la carpeta monkey-cypress
 3. Ejecutar el comando `npm i`
-4. Ejecutar el comando `cypress run -C monkey-config.json`
+4. Ejecutar el comando `cypress run -C smart-monkey-config.json`
 5. Para ver el resulado ingresar en la carpeta results y abrir el archivo monkey-execution.html
 
 ## Ripuppet
