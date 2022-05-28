@@ -96,7 +96,7 @@ Feature: Creación de un post
     Then I take a screenshot
     Then I wait message error
 
-  @user4 @web
+  @user5 @web
   Scenario: Validación POST URL diferente para post con el mismo titulo.
     Given I navigate to page "http://localhost:2368/ghost/"
     And I wait for 3 seconds
