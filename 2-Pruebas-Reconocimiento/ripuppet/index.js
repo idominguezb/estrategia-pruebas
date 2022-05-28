@@ -441,8 +441,8 @@ async function interactWithObject(object, page, currentState, interactionNumber,
         if(index !== -1){
           await elementHandle.click();
           await page.keyboard.type(inputValues[index]);
-          await
-          await page.click("#ember11")
+       
+          await page.click("#ember12")
           
         }
         else{

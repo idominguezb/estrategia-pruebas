@@ -1,10 +1,10 @@
 {
-    "url": "http://localhost:2368/ghost/",
+    "url": "http://localhost:3001/ghost/",
     "headless":true,
-    "depthLevels": 2,
+    "depthLevels": 3,
     "inputValues": true,
-    "values": {"ember7": "prueba@example.com",
-        "ember9": "prueba@example.com123456789"
+    "values": {"ember8": "prueba@example.com",
+        "embe9": "prueba@example.com123456789"
        },
     "browsers": ["chromium"],
     "viewportHeight":1080,
