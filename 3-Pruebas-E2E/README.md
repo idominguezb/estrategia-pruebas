@@ -1,5 +1,5 @@
 # e2e-testing 
-[Estrategia](Estrategia)
+[Estrategia](#Estrategia)
 # Escenario de pruebas(ghost 3.42)
 | Identificador | Nombre escenario      | Tipo     |
 |---------------|-----------------------|----------|
