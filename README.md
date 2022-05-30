@@ -1,4 +1,4 @@
-[Documento][https://uniandes-my.sharepoint.com/:w:/g/personal/i_dominguezb_uniandes_edu_co/EcAPr-LrkJ1Dm80DCA7EraUBIZkDUHttChFm5aHLYTmCYQ?e=b4mLuo)
+[Documento](https://uniandes-my.sharepoint.com/:w:/g/personal/i_dominguezb_uniandes_edu_co/EcAPr-LrkJ1Dm80DCA7EraUBIZkDUHttChFm5aHLYTmCYQ?e=b4mLuo)
 # Ejecutar las pruebas
 Antes de ejecutar las pruebas se recomienda tener un usuario con email: prueba@example.com y password:prueba@example.com123456789 en ambas versiones.
 
