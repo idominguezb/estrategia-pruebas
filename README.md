@@ -24,7 +24,8 @@ Antes de le ejecucion ejecutar el comando `npm install -g http-server`
 6. Ingresar a la carpeta creada
 7. Abrir la consola de comnado y ejecutar `http-server`
 
-# Pruebas e2e
+# Pruebas e2
+[Escenarios](https://github.com/idominguezb/estrategia-pruebas/tree/main/3-Pruebas-E2E#escenarios-de-pruebasghost-447)
 ### Cypress 
 1. Ejecute el comando `npm install` en la carpeta 3-Pruebas-E2E
 2. Para ejecutar las pruebas:
@@ -40,6 +41,7 @@ Antes de le ejecucion ejecutar el comando `npm install -g http-server`
 # Pruebas de regresion
 Si ya ejecuto las pruebas e2e anteriormente ejecutar el comando `cypress run --spec "cypress/integration/delete/*.spec.js"` para eliminar todo el contenido para que la comparacion sea lo mas parecido posible
 ### Cypress 
+
 Para hacer las pruebas de regresion se recomienda ejecutar las pruebas de ghost 3.42 primero
 1. Ejecute el comando `npm install` en la carpeta 3-Pruebas-E2E (Si no ha ejecutado este comando antes)
 2. Para ejecutar las pruebas:
