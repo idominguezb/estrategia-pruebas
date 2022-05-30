@@ -50,6 +50,7 @@ Para hacer las pruebas de regresion se recomienda ejecutar las pruebas de ghost 
 3. Ejecutar el comando `npm run enablev4`
 4. Ejecute el comando `npm run start` para empezar con la ejecucion
 ### VRT
+[Estrategia](https://github.com/idominguezb/estrategia-pruebas/blob/main/3-Pruebas-E2E/README.md#Estrategia)
 Antes debe realizar los pasos anteriormente descritos
 1. Ir a la carpeta resemblejs
 2. Ejecutar `npm install`
