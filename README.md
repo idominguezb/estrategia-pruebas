@@ -40,6 +40,7 @@ Antes de le ejecucion ejecutar el comando `npm install -g http-server`
 
 # Pruebas de regresion
 Si ya ejecuto las pruebas e2e anteriormente ejecutar el comando `cypress run --spec "cypress/integration/delete/*.spec.js"` para eliminar todo el contenido para que la comparacion sea lo mas parecido posible
+[Escenarios version 3.42](https://github.com/idominguezb/estrategia-pruebas/tree/main/3-Pruebas-E2E#escenario-de-pruebasghost-342)
 ### Cypress 
 
 Para hacer las pruebas de regresion se recomienda ejecutar las pruebas de ghost 3.42 primero
