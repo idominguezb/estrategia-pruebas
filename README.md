@@ -63,6 +63,7 @@ Antes debe realizar los pasos anteriormente descritos
 
 # Pruebas de Aceptacion
 ### cypress
+[Estretagia](https://github.com/idominguezb/estrategia-pruebas/tree/main/4-Pruebas-Aceptacion#distribucion)
 1. Ejecute el comando `npm install` en la carpeta 4-Pruebas-Aceptacion
 2. Para ejecutar las pruebas:
   * Ejecutar solo Members `cypress run --spec cypress/integration/members/*/**.js`
