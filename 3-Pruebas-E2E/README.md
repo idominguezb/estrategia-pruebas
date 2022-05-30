@@ -1,5 +1,5 @@
 # e2e-testing 
-[Estrategia](Estrategia-para-realizar-VRT)
+[Estrategia](Estrategia)
 # Escenario de pruebas(ghost 3.42)
 | Identificador | Nombre escenario      | Tipo     |
 |---------------|-----------------------|----------|
@@ -57,7 +57,7 @@
 | EMB2          | Crear miembro con email invalido                        | Positivo          |
 | EMB3          | Crear miembro con descripcion con mas de 500 caracteres | Positivo          |
 | EMB4          | Borrar miembro                                          | Positivo          |
-# Estrategia para realizar VRT
+# Estrategia
 Para realizar el VRT comparamos los screenshot generado con cypress en la version 3.42 con las de kraken que tomaba screenshot en la version 4.47, tratando siempre de tomar screenshot en los mismos pasos
 # Cypress
 Para tomar captura en cypress utilizamos el comando cy.screenshot()
